@@ -36,7 +36,7 @@ export function getAPIBaseURL(version?: string): string {
     // If the host contains a port, remove it
     host = host.substring(0, host.indexOf(":"));
   }
-  return `${window.location.protocol}//${host}:3003/file-import/${version ? version + "/" : ""}`;
+  return `${window.location.protocol}//${host}/file-import/${version ? version + "/" : ""}`;
 }
 
 const successHandler = (notificationVars?: Notification) => {
