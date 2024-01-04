@@ -24,6 +24,8 @@ import { PiArrowCounterClockwise, PiX } from "react-icons/pi";
 
 const TUS_ENDPOINT = getAPIBaseURL("v1") + "files";
 
+console.log('#TUS_ENDPOINT', TUS_ENDPOINT);
+
 export default function Main() {
   useRevealApp();
 
