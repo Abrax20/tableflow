@@ -44,6 +44,7 @@ export default function UppyWrapper({
       const tusInstance = instance?.getPlugin("Tus");
       tusInstance?.setOptions({
         endpoint,
+        uploadUrl: endpoint,
         onBeforeRequest: (req: any) => {
           if (importerId && importerId !== "0") {
             req.setHeader("X-Importer-ID", importerId);
