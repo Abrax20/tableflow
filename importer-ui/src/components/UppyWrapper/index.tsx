@@ -35,7 +35,7 @@ export default function UppyWrapper({
 }: UppyWrapperProps) {
   const [uppy, setUppy] = useState<Uppy | null>(null);
 
-  console.log('#UppyEndpoint', endpoint);
+  console.log("#UppyEndpoint", endpoint);
 
   useEffect(() => {
     const initializeUppy = () => {
